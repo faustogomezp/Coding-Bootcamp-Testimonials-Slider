@@ -1,0 +1,200 @@
+:root {
+    --Dark_Blue: hsl(240, 38%, 20%);
+    --Grayish_Blue: hsl(240, 18%, 77%);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 20px 20px 0 20px;
+    max-height: 640px;
+}
+
+.container div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.container div section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    animation: escalar 1s;
+}
+
+.container div section figure {
+    width: 100%;
+    height: 300px;
+    background-image: url('../images/pattern-bg.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.container div section figure img{
+    width: 230px;
+    height: 245px;
+    border-radius: 5px;
+    box-shadow: -2px 25px 45px -31px rgba(39,39,107,1);;
+
+}
+
+.container div section div {
+    order: 1;
+}
+
+.container div section p{
+    padding: 15px;
+    background-image: url("../images/pattern-quotes.svg");
+    background-size: 3.2rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: top;
+    order: 1;
+    color: var(--Dark_Blue);
+    font-weight: 400;
+    line-height: 1.5;
+    font-size: 1.5rem;
+}
+
+.container div section h3{
+    order: 2;
+    font-size: 1.5rem;
+    display: inline-block;
+    color: var(--Grayish_Blue)
+}
+
+.container div section h3 strong{
+    font-weight: 700;
+    display: block;
+    color: var(--Dark_Blue);
+}
+
+#article-1{
+    display: none;
+}
+
+.container div .container-buttons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    top: 265px;
+    position: absolute;
+    background-color: #fff;
+}
+
+
+
+.container div .container-buttons img{
+    width: 7px;
+    height: 7px;
+}
+
+.article-footer{
+    background-image: url("../images/pattern-curve.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    width: 100%;
+}
+
+@keyframes escalar {
+    from{
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@media screen and (min-width:1024px){
+
+    .container {
+        width: 1024px;
+        height: 500px;
+        margin: auto;
+    }
+
+    .container div section {
+        flex-wrap: nowrap;
+        align-items: center;
+        text-align: left;
+    }
+
+    .container div section div {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        left: 100px;
+        height: 300px;
+    }
+
+    .container div section figure {
+        order: 2;
+        width: 500px;
+        height: 500px;
+        padding-top: 50px;
+    }
+
+    .container div section figure img{
+        width: 380px;
+        height: 380px;
+    }
+
+    .container div section p{
+        padding: 4.9rem 0 0 0;
+        width: 500px;
+        font-size: 2.5rem;
+        background-position-y: 0px;
+        background-size: 9rem;
+        background-position-x: 7.5rem;
+
+    }
+    .container div section h3 strong{
+        display:inline;
+    }
+
+    .container div .container-buttons{
+        left: 590px;
+        top: 410px;
+        width: 80px;
+        height: 40px;
+    }
+
+    .container div .container-buttons img{
+        width: 12px;
+        height: 12px;
+    }
+
+    .article-footer{
+        height: 120px;
+        width: 1024px;
+        margin: auto;
+    }
+}

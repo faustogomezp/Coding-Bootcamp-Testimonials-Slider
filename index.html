@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <title>Coding Bootcamp Testimonials Slider</title>
-  </head>
-  <body>
-    “ I’ve been interested in coding for a while but never taken the jump, until
-    now. I couldn’t recommend this course enough. I’m now in the job of my
-    dreams and so excited about the future. ” Tanya Sinclair UX Engineer “ If
-    you want to lay the best foundation possible I’d recommend taking this
-    course. The depth the instructors go into is incredible. I now feel so
-    confident about starting up as a professional developer. ” John Tarkpor
-    Junior Front-end Developer
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Coding Bootcamp Testimonials Slider</title>
+</head>
+
+<body>
+  <main class="container">
+    <div>
+      <section id="article-0">
+        <div>
+          <p>“ I’ve been interested in coding for a while but never taken the jump, until now. I couldn’t recommend this
+            course enough. I’m now in the job of my dreams and so excited about the future. ” </p>
+          <h3><strong>Tanya Sinclair </strong>UX Engineer</h3>
+        </div>
+        <figure><img src="./images/image-tanya.jpg" alt="Tanya Sinclair Ux Engineer"></figure>
+      </section>
+      <section id="article-1">
+        <div>
+          <p>“ If you want to lay the best foundation possible I’d recommend taking this course. The depth the
+            instructors
+            go into is incredible. I now feel so confident about starting up as a professional developer. ” </p>
+          <h3><strong>John Tarkpor </strong>Junior Front-end Developer</h3>
+        </div>
+        <figure><img src="./images/image-john.jpg" alt="Jonh Tarkpor Junior Front-end Developer"></figure>
+      </section>
+      <div class="container-buttons">
+        <figure><img id="prevButton" src="./images/icon-prev.svg" alt=""></figure>
+        <figure><img id="nextButton" src="./images/icon-next.svg" alt=""></figure>
+      </div>
+    </div>
+  </main>
+  <div class="article-footer"></div>
+  <script src="./assets/main.js"></script>
+</body>
+
 </html>
